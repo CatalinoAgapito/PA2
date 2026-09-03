@@ -5,7 +5,7 @@
 
 In this Program Assignment, three different problems were asked to demonstrate proficiency in NumPy array operations. Each problem focuses on different aspects of numerical computing with NumPy, from array creation and manipulation to statistical computations and Boolean filtering.
 
-# Problem 1:REPRODUCIBLE NORMALIZATION PROBLEM
+# Problem 1: Reproducible Normalization 
 
 In this problem, it requires creating a reproducible 5x5 array of random integers and normalizing it using the z-score formula. The goal is to demonstrate understanding of random number generation, array statistics, and vectorized operations
 
@@ -40,7 +40,7 @@ In order to create a reproducible random array and normalize it, the program fir
 
 
 
-# Problem 2: CUBES DIVISIBLE BY 4 PROBLEM
+# Problem 2: Cubes Divisible by 4
 In this problem, you are asked to create a 10×10 array of cubes of the first 100 positive integers, then select only those cubes divisible by 4. This demonstrates array creation, reshaping, and Boolean filtering.
 
 
@@ -65,7 +65,7 @@ np.save("div_by_4.npy", div_by_4)
 In order to create the array and filter values divisible by 4, the program first generates numbers 1 to 100 and cubes each element using vectorized exponentiation. The resulting 1D array is reshaped into a 10×10 matrix, preserving row-major order. Boolean filtering is then applied to select only elements where the cube is divisible by 4, using the modulo operator to create a mask. The program displays the shape of the array, the filtered values, and the count of selected elements.
 
 
-# Problem 3: ABOVE-MEAN SQUARES PROBLEM
+# Problem 3: Above-Mean Squares 
 In this problem, you are asked to create a 6×6 array of squares of the first 36 positive integers, compute the mean, and select elements greater than the mean. This demonstrates array creation, statistical computation, and conditional selection.
 
 
