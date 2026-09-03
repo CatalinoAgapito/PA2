@@ -5,4 +5,4 @@
 
 In this Program Assignment, three different tasks were assigned. Each problem has its own function for performing a specific task.
 
-#A. REPRODUCIBLE NORMALIZATION PROBLEM
+# A. REPRODUCIBLE NORMALIZATION PROBLEM
