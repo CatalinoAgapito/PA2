@@ -9,6 +9,8 @@ In this Program Assignment, three different problems were asked to demonstrate p
 
 In this problem, it requires creating a reproducible 5x5 array of random integers and normalizing it using the z-score formula. The goal is to demonstrate understanding of random number generation, array statistics, and vectorized operations
 
+
+
 ```
 import numpy as np
 
@@ -32,10 +34,15 @@ print(X_normalized.std())
 
 np.save("X_normalized.npy", X_normalized)
 ````
+
+
 In order to create a reproducible random array and normalize it, the program first sets a random seed to ensure the same numbers are generated every time. A 5×5 array of random integers between 10 and 100 is then created using NumPy's randint function. The normalization is performed by subtracting the mean of all elements and dividing by the standard deviation, resulting in a normalized array with mean 0 and standard deviation 1. The program displays the original array, normalized array, and verifies the mean and standard deviation.
+
+
 
 # Problem 2: CUBES DIVISIBLE BY 4 PROBLEM
 In this problem, you are asked to create a 10×10 array of cubes of the first 100 positive integers, then select only those cubes divisible by 4. This demonstrates array creation, reshaping, and Boolean filtering.
+
 
 ````
 C = np.arange(1, 101) ** 3
@@ -57,8 +64,10 @@ np.save("div_by_4.npy", div_by_4)
 ````
 In order to create the array and filter values divisible by 4, the program first generates numbers 1 to 100 and cubes each element using vectorized exponentiation. The resulting 1D array is reshaped into a 10×10 matrix, preserving row-major order. Boolean filtering is then applied to select only elements where the cube is divisible by 4, using the modulo operator to create a mask. The program displays the shape of the array, the filtered values, and the count of selected elements.
 
+
 # Problem 3: ABOVE-MEAN SQUARES PROBLEM
 In this problem, you are asked to create a 6×6 array of squares of the first 36 positive integers, compute the mean, and select elements greater than the mean. This demonstrates array creation, statistical computation, and conditional selection.
+
 
 ````
 S = np.arange(1, 37) ** 2
@@ -83,4 +92,6 @@ print(above_mean.size)
 
 np.save("above_mean.npy", above_mean)
 ````
+
+
 In order to create the squares array and filter values above the mean, the program first generates numbers 1 to 36 and squares each element using vectorized exponentiation. The resulting 1D array is reshaped into a 6×6 matrix, preserving row-major order. The mean of all elements is computed using NumPy's mean function. Boolean filtering is then applied to select only elements greater than the computed mean. The program displays the original array, the mean value, the filtered values, and the count of selected elements.
