@@ -3,13 +3,11 @@
 ### Section: 2ECE-C
 ### Date Submitted: September 3, 2026
 
-In this Program Assignment, three different tasks were assigned. Each problem has its own function for performing a specific task.
+In this Program Assignment, three different problems were asked to demonstrate proficiency in NumPy array operations. Each problem focuses on different aspects of numerical computing with NumPy, from array creation and manipulation to statistical computations and Boolean filtering.
 
 # Problem 1:REPRODUCIBLE NORMALIZATION PROBLEM
 
-
-
-
+In this problem, it requires creating a reproducible 5x5 array of random integers and normalizing it using the z-score formula. The goal is to demonstrate understanding of random number generation, array statistics, and vectorized operations
 
 ```
 import numpy as np
@@ -34,7 +32,7 @@ print(X_normalized.std())
 
 np.save("X_normalized.npy", X_normalized)
 ````
-
+In order to create a reproducible random array and normalize it, the program first sets a random seed to ensure the same numbers are generated every time. A 5x5 array of random
 
 # Problem 2: CUBES DIVISIBLE BY 4 PROBLEM
 
